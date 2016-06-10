@@ -20,16 +20,21 @@ class ImagePlayer {
     urls: Array<string> = [];
     last_fetch_timestamp: number = 0;
 
+    // Use this flag to sync between the completion of ajax and fetchImages() 
+    is_fatching: boolean = false;
+
 
     constructor(parent: HTMLElement, camera_name: string) {
         this.parentElem = parent;
 
         this.title_child = document.createElement('H1');
         this.title_child.appendChild(document.createTextNode(camera_name));
-        this.parentElem.appendChild(this.title_child);
 
         this.img_child = document.createElement('img');
-        this.parentElem.appendChild(this.img_child);
+        this.img_child.onload = function () {
+            //$(this).fadeIn(400);
+            console.log('Loaded image ' + this.src);
+        }
 
         // sample URL below:
         // http://api.novascotiawebcams.com/api/image_profile/ferryterminal/images
@@ -37,6 +42,10 @@ class ImagePlayer {
     }
 
     start() {
+
+        this.parentElem.appendChild(this.title_child);
+        this.parentElem.appendChild(this.img_child);
+
         // Fetching from current time minus the delay in source, minus the length of buffer.
         //this.last_fetch_timestamp = new Date().getTime() / 1000;
         //this.fetchImages(this.last_fetch_timestamp - ImagePlayer.source_delay - ImagePlayer.buffer_seconds, true); // true to kick off refreshing
@@ -45,12 +54,17 @@ class ImagePlayer {
     }
 
     stop() {
+        this.parentElem.removeChild(this.title_child);
+        this.parentElem.removeChild(this.img_child);
         clearTimeout(this.timerRefreshImage);
     }
 
     refreshImage() {
         console.log('Refreshing, ' + this.urls.length + ' in buffer');
-        this.img_child.setAttribute('src', this.urls.shift());
+        var img: HTMLElement = this.img_child;
+
+        img.setAttribute('src', this.urls.shift());
+        $(img).fadeIn(400);
 
         // If we are running close to our buffer, fetch again.
         if (this.urls.length <= (ImagePlayer.BUFFER_SECONDS / ImagePlayer.PLAY_INTERVAL)) {
@@ -59,6 +73,12 @@ class ImagePlayer {
     }
 
     fetchImages(startTimers?: string) {
+
+        // If there is a fetching going on, skip
+        if (this.is_fatching) {
+            return;
+        }
+        this.is_fatching = true;    // will turn off after ajax return.
 
         // Sample URL below.
         // http://api.novascotiawebcams.com/api/image_profile/ferryterminal/images?absolute_timestamp=1465262275&period=30&speed=1&thumbnail=0
@@ -90,20 +110,27 @@ class ImagePlayer {
                 });
                 console.log('size of current urls:' + self.urls.length.toString());
 
-
+                // If this is the initial fetch, load one image and kick off timer.
                 if (startTimers==='Start timers') {
-                    // This is the initial fetch, load one immage immediately, and then kick off timer.
                     self.img_child.setAttribute('src', self.urls.shift());
                     self.timerRefreshImage = setInterval(() => self.refreshImage(), ImagePlayer.PLAY_INTERVAL * 1000);
                     console.log('refreshing started');
                 }
+
+                // Turn off fetching flag
+                self.is_fatching = false;
+            },
+            error: function () {
+                self.is_fatching = false;
             }
+
         });
     }
 }
 
 window.onload = () => {
     var content = document.getElementById('content');
-    var player = new ImagePlayer(content, 'ferryterminal');
-    player.start();
+    var ferryterminal = new ImagePlayer(content, 'ferryterminal');
+    var pictoulodge = new ImagePlayer(content, 'pictoulodge');
+    pictoulodge.start();
 };
