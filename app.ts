@@ -5,13 +5,14 @@
 class ImagePlayer {
 
     // Some static configures
-    static urlAPIbase: string = 'http://api.novascotiawebcams.com/api/image_profile/';
-    static buffer_seconds: number = 15;     // seconds of buffer.
-    static play_interval: number = 2;       // 2 seconds per frame.
-    static source_delay: number = 30;      // image source appears to have ~ 30 seconds delay from real time
+    static URLAPIBASE: string = 'http://api.novascotiawebcams.com/api/image_profile/';
+    static BUFFER_SECONDS: number = 15;     // seconds of buffer.
+    static PLAY_INTERVAL: number = 2;       // 2 seconds per frame.
+    static SOURCE_DELAY: number = 30;      // image source appears to have ~ 30 seconds delay from real time
 
     parentElem: HTMLElement;
-    childElem: HTMLElement;
+    title_child: HTMLElement;
+    img_child: HTMLElement;
 
     apiUrlBase: string;
     timerRefreshImage: number = 0;
@@ -22,12 +23,17 @@ class ImagePlayer {
 
     constructor(parent: HTMLElement, camera_name: string) {
         this.parentElem = parent;
-        this.childElem = document.createElement('img');
-        this.parentElem.appendChild(this.childElem);
 
-        // samle URL below:
+        this.title_child = document.createElement('H1');
+        this.title_child.appendChild(document.createTextNode(camera_name));
+        this.parentElem.appendChild(this.title_child);
+
+        this.img_child = document.createElement('img');
+        this.parentElem.appendChild(this.img_child);
+
+        // sample URL below:
         // http://api.novascotiawebcams.com/api/image_profile/ferryterminal/images
-        this.apiUrlBase = ImagePlayer.urlAPIbase + camera_name + '/images';
+        this.apiUrlBase = ImagePlayer.URLAPIBASE + camera_name + '/images';
     }
 
     start() {
@@ -44,10 +50,10 @@ class ImagePlayer {
 
     refreshImage() {
         console.log('Refreshing, ' + this.urls.length + ' in buffer');
-        this.childElem.setAttribute('src', this.urls.shift());
+        this.img_child.setAttribute('src', this.urls.shift());
 
         // If we are running close to our buffer, fetch again.
-        if (this.urls.length <= (ImagePlayer.buffer_seconds / ImagePlayer.play_interval)) {
+        if (this.urls.length <= (ImagePlayer.BUFFER_SECONDS / ImagePlayer.PLAY_INTERVAL)) {
             this.fetchImages();
         }
     }
@@ -59,7 +65,7 @@ class ImagePlayer {
         // http://api.novascotiawebcams.com/api/image_profile/ferryterminal/images?relative_timestamp=30&period=30&speed=1&thumbnail=0
         var apiUrl: string;
         if (this.last_fetch_timestamp === 0) {
-            apiUrl = this.apiUrlBase + '?relative_timestamp=' + ImagePlayer.source_delay;
+            apiUrl = this.apiUrlBase + '?relative_timestamp=' + ImagePlayer.SOURCE_DELAY;
         } else {
             apiUrl = this.apiUrlBase + '?absolute_timestamp=' + this.last_fetch_timestamp;
         }
@@ -84,10 +90,11 @@ class ImagePlayer {
                 });
                 console.log('size of current urls:' + self.urls.length.toString());
 
-                // Start timers if requested
+
                 if (startTimers==='Start timers') {
-                    // Start timers on success
-                    self.timerRefreshImage = setInterval(() => self.refreshImage(), ImagePlayer.play_interval * 1000);
+                    // This is the initial fetch, update image src immediately and kick off timer.
+                    self.img_child.setAttribute('src', self.urls.shift());
+                    self.timerRefreshImage = setInterval(() => self.refreshImage(), ImagePlayer.PLAY_INTERVAL * 1000);
                     console.log('refreshing started');
                 }
             }

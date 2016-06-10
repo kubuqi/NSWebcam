@@ -6,11 +6,14 @@ var ImagePlayer = (function () {
         this.urls = [];
         this.last_fetch_timestamp = 0;
         this.parentElem = parent;
-        this.childElem = document.createElement('img');
-        this.parentElem.appendChild(this.childElem);
-        // samle URL below:
+        this.title_child = document.createElement('H1');
+        this.title_child.appendChild(document.createTextNode(camera_name));
+        this.parentElem.appendChild(this.title_child);
+        this.img_child = document.createElement('img');
+        this.parentElem.appendChild(this.img_child);
+        // sample URL below:
         // http://api.novascotiawebcams.com/api/image_profile/ferryterminal/images
-        this.apiUrlBase = ImagePlayer.urlAPIbase + camera_name + '/images';
+        this.apiUrlBase = ImagePlayer.URLAPIBASE + camera_name + '/images';
     }
     ImagePlayer.prototype.start = function () {
         // Fetching from current time minus the delay in source, minus the length of buffer.
@@ -24,9 +27,9 @@ var ImagePlayer = (function () {
     };
     ImagePlayer.prototype.refreshImage = function () {
         console.log('Refreshing, ' + this.urls.length + ' in buffer');
-        this.childElem.setAttribute('src', this.urls.shift());
+        this.img_child.setAttribute('src', this.urls.shift());
         // If we are running close to our buffer, fetch again.
-        if (this.urls.length <= (ImagePlayer.buffer_seconds / ImagePlayer.play_interval)) {
+        if (this.urls.length <= (ImagePlayer.BUFFER_SECONDS / ImagePlayer.PLAY_INTERVAL)) {
             this.fetchImages();
         }
     };
@@ -36,7 +39,7 @@ var ImagePlayer = (function () {
         // http://api.novascotiawebcams.com/api/image_profile/ferryterminal/images?relative_timestamp=30&period=30&speed=1&thumbnail=0
         var apiUrl;
         if (this.last_fetch_timestamp === 0) {
-            apiUrl = this.apiUrlBase + '?relative_timestamp=' + ImagePlayer.source_delay;
+            apiUrl = this.apiUrlBase + '?relative_timestamp=' + ImagePlayer.SOURCE_DELAY;
         }
         else {
             apiUrl = this.apiUrlBase + '?absolute_timestamp=' + this.last_fetch_timestamp;
@@ -59,20 +62,20 @@ var ImagePlayer = (function () {
                     });
                 });
                 console.log('size of current urls:' + self.urls.length.toString());
-                // Start timers if requested
                 if (startTimers === 'Start timers') {
-                    // Start timers on success
-                    self.timerRefreshImage = setInterval(function () { return self.refreshImage(); }, ImagePlayer.play_interval * 1000);
+                    // This is the initial fetch, update image src immediately and kick off timer.
+                    self.img_child.setAttribute('src', self.urls.shift());
+                    self.timerRefreshImage = setInterval(function () { return self.refreshImage(); }, ImagePlayer.PLAY_INTERVAL * 1000);
                     console.log('refreshing started');
                 }
             }
         });
     };
     // Some static configures
-    ImagePlayer.urlAPIbase = 'http://api.novascotiawebcams.com/api/image_profile/';
-    ImagePlayer.buffer_seconds = 15; // seconds of buffer.
-    ImagePlayer.play_interval = 2; // 2 seconds per frame.
-    ImagePlayer.source_delay = 30; // image source appears to have ~ 30 seconds delay from real time
+    ImagePlayer.URLAPIBASE = 'http://api.novascotiawebcams.com/api/image_profile/';
+    ImagePlayer.BUFFER_SECONDS = 15; // seconds of buffer.
+    ImagePlayer.PLAY_INTERVAL = 2; // 2 seconds per frame.
+    ImagePlayer.SOURCE_DELAY = 30; // image source appears to have ~ 30 seconds delay from real time
     return ImagePlayer;
 }());
 window.onload = function () {
