@@ -1,6 +1,13 @@
 ﻿// TODO:
 //  add the flexibility of reading play_interval from site API: http://api.novascotiawebcams.com/api/image_profile/ferryterminal
 
+// Structure to hold an image.
+interface Image {
+    elem: HTMLElement;
+    url: string;
+    timestamp: number;
+}
+
 
 class ImagePlayer {
 
@@ -11,32 +18,31 @@ class ImagePlayer {
     static source_delay: number = 70;      // image source appears to have ~ 60 seconds delay from real time
 
     parentElem: HTMLElement;
-    img: HTMLElement;
+    childElem: HTMLElement;
 
     apiUrl: string;
     timerRefreshImage: number = 0;
 
-    urls: Array<string> = [];
-    timestamp: number = 0;
+    imgBuffer: Array<HTMLElement> = [];
+    last_fetch_timestamp: number = 0;
 
 
 
     constructor(parent: HTMLElement, camera_name: string) {
         this.parentElem = parent;
+        this.childElem = document.createElement('img');
+        this.parentElem.appendChild(this.childElem);
 
         // samle URL below:
         // http://api.novascotiawebcams.com/api/image_profile/ferryterminal/images
         this.apiUrl = ImagePlayer.urlAPIbase + camera_name + '/images';
-
-        this.img = document.createElement('img');
-        this.parentElem.appendChild(this.img);
     }
 
     start() {
         // Fetching from current time minus the delay in source, minus the length of buffer.
-        this.timestamp = new Date().getTime() / 1000;
-        this.fetchImages(this.timestamp - ImagePlayer.source_delay - ImagePlayer.buffer_seconds, true); // true to kick off refreshing
-        console.log('fetching from ' + (this.timestamp - ImagePlayer.buffer_seconds) + ' with current timestamp:' + this.timestamp);
+        this.last_fetch_timestamp = new Date().getTime() / 1000;
+        this.fetchImages(this.last_fetch_timestamp - ImagePlayer.source_delay - ImagePlayer.buffer_seconds, true); // true to kick off refreshing
+        console.log('fetching from ' + (this.last_fetch_timestamp - ImagePlayer.buffer_seconds) + ' with current timestamp:' + this.last_fetch_timestamp);
     }
 
     stop() {
@@ -44,11 +50,14 @@ class ImagePlayer {
     }
 
     refreshImage() {
-        console.log('Refreshing, ' + this.urls.length + ' in buffer');
-        this.img.setAttribute('src', this.urls.shift());
+        console.log('Refreshing, ' + this.imgBuffer.length + ' in buffer');
+        var newChildElem: HTMLElement = this.imgBuffer.shift();
+        this.parentElem.replaceChild(newChildElem, this.childElem);
+        this.childElem = newChildElem;
+
         // If we are running close to our buffer, fetch again.
-        if (this.urls.length <= (ImagePlayer.buffer_seconds / ImagePlayer.play_interval)) {
-            this.fetchImages(this.timestamp, false);
+        if (this.imgBuffer.length <= (ImagePlayer.buffer_seconds / ImagePlayer.play_interval)) {
+            this.fetchImages(this.last_fetch_timestamp, false);
         }
     }
 
@@ -65,17 +74,25 @@ class ImagePlayer {
             url: apiUrl,
             dataType: 'json',
             success: function (result) {
-                console.log('Fetched ' + apiUrl);
                 $.each(result, function (index, images) {
                     console.log('Fetched ' + images.length);
-                    $.each(images, function (idx, image) {
-                        // Collect URLs
-                        self.urls.push(image.url);
-                        // Update with serverside timestamp
-                        self.timestamp = image.timestamp;
+                    $.each(images, function (idx, img) {
+                        console.log('index ' + idx + ' for ' + JSON.stringify(img));
+                        // Parse the json result
+                        var url: string = img.url;
+                        var timestamp: number = img.timestamp;
+
+                        var elem: HTMLElement = document.createElement('img');
+                        elem.setAttribute('src', url);
+                        
+                        console.log(elem);
+                        self.imgBuffer.push(elem);
+
+                        //// Update with serverside timestamp
+                        self.last_fetch_timestamp = img.timestamp;
                     })
                 });
-                console.log('size of current urls:' + self.urls.length.toString());
+                console.log('size of current urls:' + self.imgBuffer.length.toString());
 
                 // Start timers if requested
                 if (startTimers) {
