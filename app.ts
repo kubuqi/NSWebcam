@@ -92,7 +92,7 @@ class ImagePlayer {
 
 
                 if (startTimers==='Start timers') {
-                    // This is the initial fetch, update image src immediately and kick off timer.
+                    // This is the initial fetch, load one immage immediately, and then kick off timer.
                     self.img_child.setAttribute('src', self.urls.shift());
                     self.timerRefreshImage = setInterval(() => self.refreshImage(), ImagePlayer.PLAY_INTERVAL * 1000);
                     console.log('refreshing started');
