@@ -20,6 +20,7 @@ class ImagePlayer {
     parentElem: HTMLElement;
     title_child: HTMLElement;
     img_child: HTMLElement;
+    shadow_img: HTMLElement;
 
     apiUrlBase: string;
     timerRefreshImage: number = 0;
@@ -38,9 +39,19 @@ class ImagePlayer {
         this.title_child.appendChild(document.createTextNode(camera_name));
 
         this.img_child = document.createElement('img');
-        this.img_child.onload = function () {
-            //$(this).fadeIn(400);
-            console.log('Loaded image ' + this.src);
+        this.shadow_img = document.createElement('img');
+
+        var self = this;
+        this.shadow_img.onload = function () {
+            //$(this).fadeIn(300);
+    
+            //self.parentElem.replaceChild(self.shadow_img, self.img_child);
+            //self.img_child = self.shadow_img;
+            //self.shadow_img = document.createElement('img');
+
+
+            self.img_child.setAttribute('src', self.shadow_img.getAttribute('src'));
+            console.log('Loaded image ' + self.img_child.getAttribute('src'));
         }
 
         // sample URL below:
@@ -68,9 +79,9 @@ class ImagePlayer {
         // Reschedule next refreshing
         this.timerRefreshImage = setTimeout(() => this.refreshImage(), this.imgs[0].timestamp - img.timestamp);
 
-        // Refresh image by updating image source
-        this.img_child.setAttribute('src', img.url);
-//        $(img).fadeIn(200);
+        // Start loading image into shadow
+        this.shadow_img.setAttribute('src', img.url);
+        //$(this.img_child).fadeIn(500);
 
         // If we are running close to our buffer, fetch again.
         if (this.imgs.length <= (ImagePlayer.BUFFER_SECONDS / ImagePlayer.PLAY_INTERVAL)) {
@@ -139,5 +150,5 @@ window.onload = () => {
     var ferryterminal = new ImagePlayer(content, 'ferryterminal');
     var pictoulodge = new ImagePlayer(content, 'pictoulodge');
     ferryterminal.start();
-    pictoulodge.start();
+//    pictoulodge.start();
 };
