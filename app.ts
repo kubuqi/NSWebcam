@@ -144,17 +144,27 @@ class ImagePlayer {
 
 
 // JSON types for http://www.novascotiawebcams.com/webcams/cycle/
-declare module nsw_cycle {
+declare module nsw_camera_list {
+
+    export interface Geometry {
+        type: string;
+        coordinates: number[];
+    }
 
     export interface Properties {
         Title: string;
+        Region: string;
+        Sightseeing: string;
+        Featured: string;
+        Location: string;
+        Direction: string;
         Link: string;
-        Identifier: string;
-        Category: string;
+        Image: string;
     }
 
     export interface Feature {
         type: string;
+        geometry: Geometry;
         properties: Properties;
     }
 
@@ -162,6 +172,7 @@ declare module nsw_cycle {
         type: string;
         features: Feature[];
     }
+
 }
 
 window.onload = () => {
@@ -171,22 +182,30 @@ window.onload = () => {
     //ferryterminal.start();
     //pictoulodge.start();
 
-    // Fetch all camera sites.
-    $.ajax({
-        type: 'GET',
-//        url: 'http://www.novascotiawebcams.com/webcams/cycle/',
-        url: 'http://www.novascotiawebcams.com/webcams/json',
-        dataType: 'json',
-        crossDomain: true,
-        success: function (result) {
-            $.each((<nsw_cycle.RootObject>result).features, function (index, feature) {
-                var player = new ImagePlayer(content, feature.properties.Title, feature.properties.Identifier);
-                player.start();
-            });
-        },
-        error: function () {
-        }
-    }); // end of ajax
+    // Fetch all camera sites currently failed due to Cross-origin access control
+    //$.ajax({
+    //    type: 'GET',
+    //    //url: 'http://www.novascotiawebcams.com/webcams/cycle/',
+    //    //url: 'http://www.novascotiawebcams.com/webcams/json',
+    //    dataType: 'json',
+    //    crossDomain: true,
+    //    success: function (result) {
+    //        $.each((<nsw_cycle.RootObject>result).features, function (index, feature) {
+    //            var player = new ImagePlayer(content, feature.properties.Title, feature.properties.Identifier);
+    //            player.start();
+    //        });
+    //    },
+    //    error: function () {
+    //    }
+    //}); // end of ajax
+
+    $.getJSON('webcam-list.json', function (result) {
+        $.each((<nsw_camera_list.RootObject>result).features, function (index, feature: nsw_camera_list.Feature) {
+            var player = new ImagePlayer(content, feature.properties.Title, feature.properties.Image);
+            player.start();
+            console.log('Started ' + feature.properties.Title);
+        });
+    });
 
 
 };

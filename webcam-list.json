@@ -1,0 +1,1189 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.574091, 44.645482]},
+
+			"properties": {
+				"Title": "East of Grafton",
+				"Region": "1",
+				"Sightseeing": "25",
+				"Featured": "Not featured",
+				"Location": "1580 Argyle Street, Halifax",
+				"Direction": "East",
+				"Link": "/en/webcams/east-of-grafton/",
+				"Image": "eastofgrafton"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-62.641900, 45.718621]},
+
+			"properties": {
+				"Title": "Pictou Lodge",
+				"Region": "6",
+				"Sightseeing": "10",
+				"Featured": "Homepage",
+				"Location": "172 Lodge Road, Pictou",
+				"Direction": "Northwest",
+				"Link": "/en/webcams/pictou-lodge/",
+				"Image": "pictoulodge"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.319432, 45.380037]},
+
+			"properties": {
+				"Title": "Truro Nissan",
+				"Region": "4",
+				"Sightseeing": "17",
+				"Featured": "Homepage",
+				"Location": "Highway 102, Exit 14A",
+				"Direction": "South",
+				"Link": "/en/webcams/truro-nissan/",
+				"Image": "truronissan"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.311874, 44.375973]},
+
+			"properties": {
+				"Title": "Fisheries Museum",
+				"Region": "2",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "68 Bluenose Drive, Lunenburg",
+				"Direction": "East",
+				"Link": "/en/webcams/fisheries-museum/",
+				"Image": "fisheriesmuseum"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-60.559302, 47.026203]},
+
+			"properties": {
+				"Title": "Meat Cove Campground",
+				"Region": "5",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "2479 Meat Cove Road, Capstick",
+				"Direction": "East",
+				"Link": "/en/webcams/meat-cove-campground/",
+				"Image": "meatcove"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-65.323916, 43.760466]},
+
+			"properties": {
+				"Title": "Shelburne Harbour",
+				"Region": "2",
+				"Sightseeing": "12",
+				"Featured": "Homepage",
+				"Location": "Cox's Warehouse, Shelburne",
+				"Direction": "Southwest",
+				"Link": "/en/webcams/shelburne-harbour/",
+				"Image": "shelburne"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.5750886,44.6472389]},
+
+			"properties": {
+				"Title": "Argyle Street",
+				"Region": "1",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Argyle Street, Halifax",
+				"Direction": "Southeast",
+				"Link": "/en/webcams/argyle-street/",
+				"Image": "argylestreet"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-65.397783, 44.572962]},
+
+			"properties": {
+				"Title": "Milford House",
+				"Region": "4",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "5296 Highway 8, Annapolis Royal",
+				"Direction": "West",
+				"Link": "/en/webcams/milford-house/",
+				"Image": "milfordhouse"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-65.756074, 44.623384]},
+
+			"properties": {
+				"Title": "Digby Water Street",
+				"Region": "4",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Digby, Water Street",
+				"Direction": "South",
+				"Link": "/en/webcams/digby-water-street/",
+				"Image": "digbywaterstreet"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.311412, 45.103071]},
+
+			"properties": {
+				"Title": "Landscape of Grand Pré",
+				"Region": "4",
+				"Sightseeing": "15",
+				"Featured": "Not featured",
+				"Location": "Old Post Road, Grand Pré",
+				"Direction": "North",
+				"Link": "/en/webcams/landscape-of-grand-pre/",
+				"Image": "grandpre"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-66.119972, 43.829567]},
+
+			"properties": {
+				"Title": "Yarmouth Skatepark",
+				"Region": "3",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "131 Main Street, Yarmouth",
+				"Direction": "West",
+				"Link": "/en/webcams/yarmouth-skatepark/",
+				"Image": "yarmouthskatepark"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.562222, 44.662882]},
+
+			"properties": {
+				"Title": "Harbour Entrance",
+				"Region": "1",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "The Aqua Vista at King's Wharf, Dartmouth",
+				"Direction": "South",
+				"Link": "/en/webcams/harbour-entrance/",
+				"Image": "harbourentrance"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-60.401080,46.658621]},
+
+			"properties": {
+				"Title": "Highlands Links #4",
+				"Region": "5",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Ingonish Beach, Cape Breton",
+				"Direction": "Northeast",
+				"Link": "/en/webcams/highlands-links-4/",
+				"Image": "highlandslinks4"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.7173561,44.0391685]},
+
+			"properties": {
+				"Title": "Liverpool",
+				"Region": "2",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "South Queens Visitor Information Centre, Liverpool",
+				"Direction": "West",
+				"Link": "/en/webcams/liverpool/",
+				"Image": "liverpool"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.222280,44.535929]},
+
+			"properties": {
+				"Title": "Chester Golf Club",
+				"Region": "2",
+				"Sightseeing": "24",
+				"Featured": "Not featured",
+				"Location": "Chester",
+				"Direction": "South",
+				"Link": "/en/webcams/chester-golf-club/",
+				"Image": "chestergolfclub"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-62.096524,45.014165]},
+
+			"properties": {
+				"Title": "Liscombe Lodge",
+				"Region": "18",
+				"Sightseeing": "25",
+				"Featured": "Not featured",
+				"Location": "Liscombe Mills",
+				"Direction": "East",
+				"Link": "/en/webcams/liscombe-lodge/",
+				"Image": "liscombelodge"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.571069, 44.647506]},
+
+			"properties": {
+				"Title": "Merlin the Talking Parrot",
+				"Region": "1",
+				"Sightseeing": "",
+				"Featured": "Menu",
+				"Location": "Maritime Museum of the Atlantic, Halifax",
+				"Direction": "None",
+				"Link": "/en/webcams/merlin-the-talking-parrot/",
+				"Image": "merlincam"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-65.5191,44.7454]},
+
+			"properties": {
+				"Title": "Annapolis Royal",
+				"Region": "4",
+				"Sightseeing": "15",
+				"Featured": "Not featured",
+				"Location": "Saint George Street, Annapolis Royal",
+				"Direction": "Southwest",
+				"Link": "/en/webcams/annapolis-royal/",
+				"Image": "annapolis"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.583,44.4693]},
+
+			"properties": {
+				"Title": "Sambro Harbour",
+				"Region": "1",
+				"Sightseeing": "",
+				"Featured": "Not featured",
+				"Location": "Bald Rock",
+				"Direction": "West",
+				"Link": "/en/webcams/sambro-harbour/",
+				"Image": "sambroharbour"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.5614,45.6092]},
+
+			"properties": {
+				"Title": "Ski Wentworth",
+				"Region": "6",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Wentworth Valley",
+				"Direction": "East",
+				"Link": "/en/webcams/ski-wentworth/",
+				"Image": "skiwentworth"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-60.3854,46.6556]},
+
+			"properties": {
+				"Title": "Highlands Links #18",
+				"Region": "5",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Ingonish Beach, Cape Breton",
+				"Direction": "Southwest",
+				"Link": "/en/webcams/highlands-links-18/",
+				"Image": "highlandslinks2"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-60.4136,46.6544]},
+
+			"properties": {
+				"Title": "Highlands Links #12",
+				"Region": "5",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Ingonish Beach, Cape Breton",
+				"Direction": "West",
+				"Link": "/en/webcams/highlands-links-12/",
+				"Image": "highlandslinks3"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-60.3854,46.6556]},
+
+			"properties": {
+				"Title": "Highlands Links #1",
+				"Region": "5",
+				"Sightseeing": "24",
+				"Featured": "Not featured",
+				"Location": "Ingonish Beach, Cape Breton",
+				"Direction": "Northwest",
+				"Link": "/en/webcams/highlands-links-1/",
+				"Image": "highlandslinks1"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-60.4231,46.2788]},
+
+			"properties": {
+				"Title": "View of the Sea Cottages ",
+				"Region": "5",
+				"Sightseeing": "10",
+				"Featured": "Not featured",
+				"Location": "Boularderie Island, Cape Breton",
+				"Direction": "West",
+				"Link": "/en/webcams/view-of-the-sea-cottages/",
+				"Image": "viewoftheseacottages"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-59.9836,45.8935]},
+
+			"properties": {
+				"Title": "Fortress of Louisbourg",
+				"Region": "5",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Fortress of Louisbourg, Cape Breton",
+				"Direction": "West",
+				"Link": "/en/webcams/fortress-of-louisbourg/",
+				"Image": "fortresslouisbourg"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-66.3453,44.2745]},
+
+			"properties": {
+				"Title": "Brier Island",
+				"Region": "4",
+				"Sightseeing": "12",
+				"Featured": "Not featured",
+				"Location": "Brier Island Lodge, Westport, Brier Island",
+				"Direction": "South",
+				"Link": "/en/webcams/brier-island/",
+				"Image": "brierisland"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-65.7857,44.6909]},
+
+			"properties": {
+				"Title": "Point Prim Lighthouse",
+				"Region": "4",
+				"Sightseeing": "12",
+				"Featured": "Not featured",
+				"Location": "Point Prim, Digby",
+				"Direction": "North",
+				"Link": "/en/webcams/point-prim-lighthouse/",
+				"Image": "pointprim"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-65.7557,44.6235]},
+
+			"properties": {
+				"Title": "Digby Harbour",
+				"Region": "4",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "Fundy Restaurant, Digby",
+				"Direction": "Northeast",
+				"Link": "/en/webcams/digby-harbour/",
+				"Image": "digbyharbour"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-65.219,44.4846]},
+
+			"properties": {
+				"Title": "Mersey River Chalets",
+				"Region": "4",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Caledonia",
+				"Direction": "Southwest",
+				"Link": "/en/webcams/mersey-river-chalets-and-nature-retreat/",
+				"Image": "merseyriver"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.6188,45.2019]},
+
+			"properties": {
+				"Title": "Hall's Harbour 2",
+				"Region": "4",
+				"Sightseeing": "10",
+				"Featured": "Not featured",
+				"Location": "Hall's Harbour",
+				"Direction": "West",
+				"Link": "/en/webcams/halls-harbour-2/",
+				"Image": "hallsharbour2"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.6195,45.2003]},
+
+			"properties": {
+				"Title": "Hall's Harbour 1",
+				"Region": "4",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "Hall's Harbour",
+				"Direction": "North",
+				"Link": "/en/webcams/halls-harbour-1/",
+				"Image": "hallsharbour1"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.402,45.0739]},
+
+			"properties": {
+				"Title": "Wolfville Dykelands",
+				"Region": "4",
+				"Sightseeing": "25",
+				"Featured": "Not featured",
+				"Location": "Old Orchard Inn & Spa, Wolfville",
+				"Direction": "North",
+				"Link": "/en/webcams/wolfville-dykelands/",
+				"Image": "wolfvilledykes"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.3598,45.0929]},
+
+			"properties": {
+				"Title": "Wolfville Harbourside ",
+				"Region": "4",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "Railtown Condominiums, Harbourside Drive, Wolfville",
+				"Direction": "Northeast",
+				"Link": "/en/webcams/wolfville-harbourside-park/",
+				"Image": "wolfvilleharbour"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.148,44.9966]},
+
+			"properties": {
+				"Title": "Windsor Salt Marsh",
+				"Region": "4",
+				"Sightseeing": "14",
+				"Featured": "Not featured",
+				"Location": "North of the causeway on Highway 101, Windsor",
+				"Direction": "North",
+				"Link": "/en/webcams/windsor-salt-marsh/",
+				"Image": "windsorsaltmarsh"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.174,44.937]},
+
+			"properties": {
+				"Title": "OnTree Park",
+				"Region": "4",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "370 Martock Rd., Windsor",
+				"Direction": "Northeast",
+				"Link": "/en/webcams/ontree-fun-adventure-park/",
+				"Image": "ontreepark"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.1718,44.9354]},
+
+			"properties": {
+				"Title": "Ski Martock",
+				"Region": "4",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "370 Ski Martock Road, Windsor",
+				"Direction": "Southeast",
+				"Link": "/en/webcams/ski-martock/",
+				"Image": "skimartock"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.0115,45.2341]},
+
+			"properties": {
+				"Title": "Walton Lighthouse",
+				"Region": "4",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "119 Lorne Smith Road, Walton",
+				"Direction": "West",
+				"Link": "/en/webcams/walton-lighthouse/",
+				"Image": "waltonlighthouse"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.4568,45.25]},
+
+			"properties": {
+				"Title": "South Maitland",
+				"Region": "4",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Fundy Tidal Interpretive Centre",
+				"Direction": "Northeast",
+				"Link": "/en/webcams/fundy-tidal-interpretive-centre-south-maitland/",
+				"Image": "southmaitland"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.4041,45.3708]},
+
+			"properties": {
+				"Title": "Fundy FORCE",
+				"Region": "4",
+				"Sightseeing": "14",
+				"Featured": "Not featured",
+				"Location": "1156 West Bay Road, Parrsboro",
+				"Direction": "Southwest",
+				"Link": "/en/webcams/fundy-ocean-research-center-for-energy/",
+				"Image": "fundyforce"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.3193,45.3907]},
+
+			"properties": {
+				"Title": "Parrsboro Wharf",
+				"Region": "4",
+				"Sightseeing": "12",
+				"Featured": "Not featured",
+				"Location": " Parrsboro",
+				"Direction": "Southeast",
+				"Link": "/en/webcams/parrsboro/",
+				"Image": "parrsboro"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.199,45.3975]},
+
+			"properties": {
+				"Title": "Rockcliffe by the Sea",
+				"Region": "4",
+				"Sightseeing": "14",
+				"Featured": "Not featured",
+				"Location": "Rockcliffe by the Sea, Parrsboro",
+				"Direction": "Southwest",
+				"Link": "/en/webcams/rockcliffe-by-the-sea/",
+				"Image": "rockcliffe"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.4961,45.3923]},
+
+			"properties": {
+				"Title": "Masstown Market",
+				"Region": "4",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Masstown Market, Masstown",
+				"Direction": "East",
+				"Link": "/en/webcams/the-lighthouse-at-masstown-market/",
+				"Image": "masstown2"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.4958,45.3922]},
+
+			"properties": {
+				"Title": "Cobequid Mountains",
+				"Region": "4",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Masstown Market, Masstown",
+				"Direction": "Northwest",
+				"Link": "/en/webcams/cobequid-mountains/",
+				"Image": "masstown1"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-66.0616,44.3882]},
+
+			"properties": {
+				"Title": "Belliveau Cove Harbour",
+				"Region": "3",
+				"Sightseeing": "10",
+				"Featured": "Not featured",
+				"Location": "Belliveau Cove",
+				"Direction": "Southwest",
+				"Link": "/en/webcams/belliveau-cove/",
+				"Image": "belliveaucove"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-66.1158,44.3341]},
+
+			"properties": {
+				"Title": "Université Sainte-Anne",
+				"Region": "3",
+				"Sightseeing": "15",
+				"Featured": "Not featured",
+				"Location": "Church Point, Nova Scotia, Canada",
+				"Direction": "Southwest",
+				"Link": "/en/webcams/universite-sainte-anne/",
+				"Image": "churchpoint"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-66.1838,44.0846]},
+
+			"properties": {
+				"Title": "Mavillette Beach",
+				"Region": "3",
+				"Sightseeing": "10",
+				"Featured": "Not featured",
+				"Location": " Cape View Motel and Cottages, Mavillette",
+				"Direction": "West",
+				"Link": "/en/webcams/mavillette-beach/",
+				"Image": "mavillette"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-66.1218,43.8361]},
+
+			"properties": {
+				"Title": "Killam's Wharf",
+				"Region": "3",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Yarmouth",
+				"Direction": "West",
+				"Link": "/en/webcams/killams-wharf/",
+				"Image": "killamswharf"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-65.609145, 43.512993]},
+
+			"properties": {
+				"Title": "Cape Sable Island ",
+				"Region": "2",
+				"Sightseeing": "10",
+				"Featured": "Not featured",
+				"Location": "Barrington Passage",
+				"Direction": "Northeast",
+				"Link": "/en/webcams/cape-sable-island/",
+				"Image": "capesableisland"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.7454,43.9621]},
+
+			"properties": {
+				"Title": "White Point Golf ",
+				"Region": "2",
+				"Sightseeing": "24",
+				"Featured": "Not featured",
+				"Location": "White Point Golf Club, White Point Beach Resort",
+				"Direction": "East",
+				"Link": "/en/webcams/white-point-golf/",
+				"Image": "whitepointgolf"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.7357,43.9657]},
+
+			"properties": {
+				"Title": "White Point Beach ",
+				"Region": "2",
+				"Sightseeing": "7",
+				"Featured": "Menu",
+				"Location": "White Point Beach Resort",
+				"Direction": "South",
+				"Link": "/en/webcams/white-point-beach-resort/",
+				"Image": "whitepointbeach"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.31,44.3762]},
+
+			"properties": {
+				"Title": "Lunenburg Harbour",
+				"Region": "2",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "Tradewinds Realty, Lunenburg",
+				"Direction": "South",
+				"Link": "/en/webcams/lunenburg-harbour/",
+				"Image": "lunenburg"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.2421,44.536]},
+
+			"properties": {
+				"Title": "Chester Yacht Club",
+				"Region": "2",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Chester",
+				"Direction": "Southeast",
+				"Link": "/en/webcams/chester-yacht-club/",
+				"Image": "chesteryc"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.24,44.5379]},
+
+			"properties": {
+				"Title": "Chester Harbour",
+				"Region": "2",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "Tradewinds Realty, Chester",
+				"Direction": "South",
+				"Link": "/en/webcams/chester-harbour/",
+				"Image": "chesterharbour"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.2398,44.5379]},
+
+			"properties": {
+				"Title": "Chester Ferry",
+				"Region": "2",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "Tradewinds Realty, Chester",
+				"Direction": "East",
+				"Link": "/en/webcams/chester-ferry/",
+				"Image": "chesterferry"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-64.1692,44.4647]},
+
+			"properties": {
+				"Title": "Tancook Island Wharf",
+				"Region": "2",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "Tancook Bikes, Big Tancook Island",
+				"Direction": "West",
+				"Link": "/en/webcams/tancook-island-wharf/",
+				"Image": "tancookisland"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.9153,44.4933]},
+
+			"properties": {
+				"Title": "Peggys Cove Village",
+				"Region": "2",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "Beales Bailiwick, Peggys Cove",
+				"Direction": "West",
+				"Link": "/en/webcams/peggys-cove-village/",
+				"Image": "peggyscovevillage"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.9178,44.4924]},
+
+			"properties": {
+				"Title": "Peggys Cove Lighthouse",
+				"Region": "2",
+				"Sightseeing": "7",
+				"Featured": "Homepage",
+				"Location": "Sou'Wester Restaurant, Peggys Cove",
+				"Direction": "Southwest",
+				"Link": "/en/webcams/peggys-cove-lighthouse/",
+				"Image": "peggyscove"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.5461,44.6847]},
+
+			"properties": {
+				"Title": "Lake Banook &amp; Lake MicMac",
+				"Region": "1",
+				"Sightseeing": "17",
+				"Featured": "Not featured",
+				"Location": "The Admiral Long Term Care Centre, Dartmouth",
+				"Direction": "West",
+				"Link": "/en/webcams/lake-banook-lake-micmac/",
+				"Image": "lakemicmac"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.6146,44.6308]},
+
+			"properties": {
+				"Title": "Melville Heights",
+				"Region": "1",
+				"Sightseeing": "",
+				"Featured": "Not featured",
+				"Location": "Melville Heights Retirement Residence, Halifax",
+				"Direction": "North",
+				"Link": "/en/webcams/melville-heights/",
+				"Image": "melvilleheights"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.6207,44.6425]},
+
+			"properties": {
+				"Title": "Armdale Rotary",
+				"Region": "1",
+				"Sightseeing": "17",
+				"Featured": "Not featured",
+				"Location": "Armdale Professional Center, Halifax",
+				"Direction": "Southeast",
+				"Link": "/en/webcams/armdale-rotary/",
+				"Image": "armdale"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.5757,44.6457]},
+
+			"properties": {
+				"Title": "Nova Centre",
+				"Region": "1",
+				"Sightseeing": "25",
+				"Featured": "Not featured",
+				"Location": "Sackville and Market Street, Halifax",
+				"Direction": "Northeast",
+				"Link": "/en/webcams/nova-centre/",
+				"Image": "novacentre"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.5871,44.6494]},
+
+			"properties": {
+				"Title": "Emera Oval",
+				"Region": "1",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Halifax Commons, Halifax",
+				"Direction": "West",
+				"Link": "/en/webcams/halifax-commons-and-emera-oval/",
+				"Image": "emeraoval"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.5708,44.6493]},
+
+			"properties": {
+				"Title": "Ferry Terminal",
+				"Region": "1",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "The Cable Wharf, Halifax",
+				"Direction": "North",
+				"Link": "/en/webcams/ferry-terminal/",
+				"Image": "ferryterminal"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.5708,44.6492]},
+
+			"properties": {
+				"Title": "Cable Wharf",
+				"Region": "1",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "Boardwalk at Cable Wharf, Halifax",
+				"Direction": "South",
+				"Link": "/en/webcams/cable-wharf/",
+				"Image": "cablewharf"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.5709,44.6477]},
+
+			"properties": {
+				"Title": "Museum Wharves",
+				"Region": "1",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "Maritime Museum of the Atlantic, Halifax",
+				"Direction": "None",
+				"Link": "/en/webcams/museum-wharves/",
+				"Image": "museumwharves"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.5701,44.6473]},
+
+			"properties": {
+				"Title": "Maritime Museum",
+				"Region": "1",
+				"Sightseeing": "7",
+				"Featured": "Not featured",
+				"Location": "Visitor Information Center, Halifax Waterfront",
+				"Direction": "Northwest",
+				"Link": "/en/webcams/maritime-museum/",
+				"Image": "maritimemuseum"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.5684,44.6408]},
+
+			"properties": {
+				"Title": "Bishops Landing",
+				"Region": "1",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "The Westin Nova Scotian Hotel, Halifax",
+				"Direction": "North",
+				"Link": "/en/webcams/bishops-landing/",
+				"Image": "bishopslanding"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.5683,44.6404]},
+
+			"properties": {
+				"Title": "Pier 21",
+				"Region": "1",
+				"Sightseeing": "12",
+				"Featured": "Menu",
+				"Location": "Westin Nova Scotian Hotel, Halifax",
+				"Direction": "East",
+				"Link": "/en/webcams/pier-21/",
+				"Image": "pier21"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.6154,44.6726]},
+
+			"properties": {
+				"Title": "MacKay Bridge",
+				"Region": "1",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "North End Halifax",
+				"Direction": "Northeast",
+				"Link": "/en/webcams/mackay-bridge/",
+				"Image": "mackaybridge"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.563286, 44.663650]},
+
+			"properties": {
+				"Title": "Macdonald Bridge",
+				"Region": "1",
+				"Sightseeing": "13",
+				"Featured": "Not featured",
+				"Location": "The Aqua Vista at King's Wharf, Dartmouth",
+				"Direction": "West",
+				"Link": "/en/webcams/macdonald-bridge/",
+				"Image": "macdonaldbridge"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-66.1548,43.795]},
+
+			"properties": {
+				"Title": "Cape Forchu Lightstation",
+				"Region": "3",
+				"Sightseeing": "12",
+				"Featured": "Menu",
+				"Location": "Cape Forchu, Yarmouth",
+				"Direction": "South",
+				"Link": "/en/webcams/cape-forchu/",
+				"Image": "capeforchu"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-60.749,46.1004]},
+
+			"properties": {
+				"Title": "Baddeck",
+				"Region": "5",
+				"Sightseeing": "12",
+				"Featured": "Not featured",
+				"Location": "Baddeck, Cape Breton",
+				"Direction": "Southeast",
+				"Link": "/en/webcams/baddeck/",
+				"Image": "baddeck"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.56269,44.663329]},
+
+			"properties": {
+				"Title": "Halifax Waterfront",
+				"Region": "1",
+				"Sightseeing": "13",
+				"Featured": "Homepage",
+				"Location": "The Aqua Vista at King's Wharf, Dartmouth",
+				"Direction": "Southwest",
+				"Link": "/en/webcams/halifax-waterfront/",
+				"Image": "waterfront"
+			}
+		},
+		
+		{ "type": "Feature",
+
+			"geometry": {"type": "Point", "coordinates": [-63.5214,44.5033]},
+
+			"properties": {
+				"Title": "Chebucto Head",
+				"Region": "1",
+				"Sightseeing": "12",
+				"Featured": "Not featured",
+				"Location": "Duncans Cove",
+				"Direction": "North",
+				"Link": "/en/webcams/chebucto-head/",
+				"Image": "chebuctohead"
+			}
+		}
+	]
+}

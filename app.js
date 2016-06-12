@@ -102,21 +102,28 @@ window.onload = function () {
     //var pictoulodge = new ImagePlayer(content, 'pictoulodge');
     //ferryterminal.start();
     //pictoulodge.start();
-    // Fetch all camera sites.
-    $.ajax({
-        type: 'GET',
-        //        url: 'http://www.novascotiawebcams.com/webcams/cycle/',
-        url: 'http://www.novascotiawebcams.com/webcams/json',
-        dataType: 'json',
-        crossDomain: true,
-        success: function (result) {
-            $.each(result.features, function (index, feature) {
-                var player = new ImagePlayer(content, feature.properties.Title, feature.properties.Identifier);
-                player.start();
-            });
-        },
-        error: function () {
-        }
-    }); // end of ajax
+    // Fetch all camera sites currently failed due to Cross-origin access control
+    //$.ajax({
+    //    type: 'GET',
+    //    //url: 'http://www.novascotiawebcams.com/webcams/cycle/',
+    //    //url: 'http://www.novascotiawebcams.com/webcams/json',
+    //    dataType: 'json',
+    //    crossDomain: true,
+    //    success: function (result) {
+    //        $.each((<nsw_cycle.RootObject>result).features, function (index, feature) {
+    //            var player = new ImagePlayer(content, feature.properties.Title, feature.properties.Identifier);
+    //            player.start();
+    //        });
+    //    },
+    //    error: function () {
+    //    }
+    //}); // end of ajax
+    $.getJSON('webcam-list.json', function (result) {
+        $.each(result.features, function (index, feature) {
+            var player = new ImagePlayer(content, feature.properties.Title, feature.properties.Image);
+            player.start();
+            console.log('Started ' + feature.properties.Title);
+        });
+    });
 };
 //# sourceMappingURL=app.js.map
