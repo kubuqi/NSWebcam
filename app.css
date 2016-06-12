@@ -6,3 +6,15 @@ span {
     font-style: italic;
 }
 
+
+/* image player active image style */
+.imgplayer_active {
+    position:absolute;
+    z-index:99;
+}
+
+/* image player inactive image style */
+.imgplayer_inactive {
+    position:absolute;
+    z-index:0;
+}
